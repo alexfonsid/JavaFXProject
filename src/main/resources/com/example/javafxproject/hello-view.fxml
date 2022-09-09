@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #977057;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.controller.HelloController">
+   <children>
+      <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <TextField fx:id="login_field" layoutX="220.0" layoutY="80.0" prefHeight="44.0" prefWidth="260.0" promptText="login">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="0.9098039269447327" green="0.8313725590705872" blue="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect></TextField>
+            <TextField fx:id="password_field" layoutX="220.0" layoutY="128.0" prefHeight="44.0" prefWidth="260.0" promptText="password">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="0.9098039269447327" green="0.8313725590705872" blue="1.0" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect></TextField>
+            <Label alignment="CENTER" layoutX="225.0" layoutY="22.0" prefHeight="44.0" prefWidth="251.0" text="Autorization" textFill="#4d3a0b">
+               <font>
+                  <Font name="Algerian" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginSignInButon" layoutX="220.0" layoutY="180.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="260.0" text="Sign In">
+               <font>
+                  <Font name="Algerian" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="205.0" layoutY="31.0" text="FX Technology" textFill="#27f235">
+         <font>
+            <Font name="Algerian" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginSignUpButton" layoutX="546.0" layoutY="19.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="141.0" text="Sign Up">
+         <font>
+            <Font name="Algerian" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
